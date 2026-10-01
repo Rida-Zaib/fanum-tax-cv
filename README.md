@@ -1,4 +1,3 @@
-@'
 # Fanum Tax CV
 
 An AI tool that taxes the weak spots out of your CV, GitHub, and portfolio,
@@ -17,4 +16,3 @@ Setup phase. Project scaffolding in progress.
 
 ## License
 MIT
-'@ | Set-Content README.md -Encoding utf8
