@@ -1,0 +1,11 @@
+﻿.settings-form { max-width: 420px; margin: 2rem auto; text-align: left; display: grid; gap: 1rem; }
+.settings-form .field { display: grid; gap: 0.35rem; border: 0; padding: 0; }
+.settings-form label, .settings-form legend { font-weight: 600; }
+.settings-form input[type="text"], .settings-form input[type="email"], .settings-form select { padding: 0.5rem; font: inherit; }
+.settings-form .radio { display: flex; gap: 0.5rem; align-items: center; }
+.settings-form .radio label { font-weight: 400; }
+.settings-form [aria-invalid="true"] { border: 2px solid #c62828; }
+.settings-form .error { color: #c62828; margin: 0; font-size: 0.9rem; }
+.settings-form .success { color: #1b5e20; font-weight: 600; margin: 0; }
+.settings-form button { padding: 0.6rem 1rem; font: inherit; cursor: pointer; }
+.settings-form button:disabled { opacity: 0.6; cursor: not-allowed; }

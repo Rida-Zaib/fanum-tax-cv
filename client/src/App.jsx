@@ -1,14 +1,11 @@
-import { Navigate, Route, Routes } from 'react-router-dom'
-import { Layout } from './components/Layout.jsx'
-import { SettingsPage } from './pages/SettingsPage.jsx'
+﻿import React from "react";
+import SettingsForm from "./components/SettingsForm";
 
 export default function App() {
   return (
-    <Routes>
-      <Route element={<Layout />}>
-        <Route path="/settings" element={<SettingsPage />} />
-        <Route path="*" element={<Navigate to="/settings" replace />} />
-      </Route>
-    </Routes>
-  )
+    <main>
+      <h1>Profile settings</h1>
+      <SettingsForm />
+    </main>
+  );
 }
