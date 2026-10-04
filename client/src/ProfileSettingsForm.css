@@ -1,0 +1,121 @@
+/* Override these variables to match your app's theme. */
+.psf {
+  --psf-accent: #2f5d50;
+  --psf-accent-contrast: #fff;
+  --psf-border: #c9cdd2;
+  --psf-text: #1d2125;
+  --psf-muted: #5f6872;
+  --psf-error: #b3261e;
+  --psf-radius: 6px;
+
+  max-width: 32rem;
+  display: grid;
+  gap: 1.25rem;
+  color: var(--psf-text);
+  font: inherit;
+}
+
+.psf__title {
+  margin: 0;
+  font-size: 1.375rem;
+}
+
+.psf__field {
+  display: grid;
+  gap: 0.375rem;
+}
+
+.psf__field label {
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.psf input[type="text"],
+.psf input[type="email"],
+.psf textarea,
+.psf select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.6rem 0.75rem;
+  font: inherit;
+  color: inherit;
+  background: #fff;
+  border: 1px solid var(--psf-border);
+  border-radius: var(--psf-radius);
+}
+
+.psf textarea {
+  resize: vertical;
+}
+
+.psf input[aria-invalid="true"],
+.psf textarea[aria-invalid="true"] {
+  border-color: var(--psf-error);
+}
+
+.psf :is(input, textarea, select, button):focus-visible {
+  outline: 2px solid var(--psf-accent);
+  outline-offset: 2px;
+}
+
+.psf__field--check {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.psf__field--check label {
+  font-weight: 400;
+}
+
+.psf__hint {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--psf-muted);
+  justify-self: end;
+}
+
+.psf__hint--over,
+.psf__error {
+  color: var(--psf-error);
+}
+
+.psf__error {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.psf__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.psf__btn {
+  padding: 0.6rem 1.1rem;
+  font: inherit;
+  font-weight: 600;
+  background: transparent;
+  color: var(--psf-text);
+  border: 1px solid var(--psf-border);
+  border-radius: var(--psf-radius);
+  cursor: pointer;
+}
+
+.psf__btn--primary {
+  background: var(--psf-accent);
+  color: var(--psf-accent-contrast);
+  border-color: var(--psf-accent);
+}
+
+.psf__btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.psf__status {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--psf-muted);
+}
