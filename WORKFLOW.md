@@ -27,3 +27,4 @@ The rounds used different tools and slightly different scaffolds, so the gap com
 
 ## What I learned
 Five rules went into CLAUDE.md: react-hook-form + zod with a schema file, label and aria rules, a test file per component, one stylesheet per component, and exact file paths plus git status to delete unrequested files.
+Screenshots: docs/round-1.png, docs/round-2-first-output.png
